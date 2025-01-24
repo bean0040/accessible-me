@@ -37,21 +37,21 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <section role="complementary" class="owner">
         <h2>Meet the owner</h2>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <h2>Address</h2>
-        <p>
-          Jambox Studios
+        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="streetAddress">Jambox Studios</span>
           <br>
-          123 Guitar Road,
+          <span itemprop="addressLocality">123 Guitar Road,</span>
           <br>
-          Musicville, Danceistan
+          <span itemprop="addressCountry">Musicville, Danceistan</span>
           <br>
-          B3T 0L0
+          <span itemprop="postalCode">B3T 0L0</span>
         </p> 
       </section>
       <section id="contact" class="contact-section">
